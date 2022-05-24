@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ryckandmorty.data.model.Characters
 import com.example.ryckandmorty.databinding.ItemCharactersBinding
+import com.example.ryckandmorty.ui.episodes.adapters.EpisodeAdapter
 import com.example.ryckandmorty.utils.bindingadapters.loadImage
 import javax.inject.Inject
 

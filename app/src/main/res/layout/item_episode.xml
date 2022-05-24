@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:alpha="0.9"
+        android:background="#39b8f3"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#171717"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:text="The Wedding Squanchers" />
+
+        <TextView
+            android:id="@+id/air_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_centerHorizontal="true"
+            android:textColor="#171717"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="October 4, 2015" />
+
+        <TextView
+            android:id="@+id/episode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/air_date"
+            android:layout_centerHorizontal="true"
+            android:textColor="#171717"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="S02E10" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+

@@ -25,7 +25,7 @@ class CharactersFragment : BaseFragment<FragmentCharactersBinding, CharactersVie
     override val viewModel: CharactersViewModel by viewModels()
 
     @Inject
-    lateinit var charactersAdapter: CharactersAdapter
+    lateinit var characterAdapter: CharactersAdapter
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -38,7 +38,7 @@ class CharactersFragment : BaseFragment<FragmentCharactersBinding, CharactersVie
     // Handle with state for att the UI
     private fun observerStateFlow() {
         viewLifecycleOwner.lifecycleScope.launch {
-            charactersAdapter.loadStateFlow.collectLatest { loadStates ->
+            characterAdapter.loadStateFlow.collectLatest { loadStates ->
 
                 when (loadStates.refresh) {
                     is LoadState.Loading -> binding.progressBar.visibility = View.VISIBLE
@@ -56,14 +56,14 @@ class CharactersFragment : BaseFragment<FragmentCharactersBinding, CharactersVie
     private fun initObserver() {
         lifecycleScope.launch {
             viewModel.fetchCharacters().collectLatest {
-                charactersAdapter.submitData(it)
+                characterAdapter.submitData(it)
             }
         }
     }
 
     private fun setupRecyclerView() {
         binding.recyclerCharacters.apply {
-            adapter = charactersAdapter
+            adapter = characterAdapter
             layoutManager = LinearLayoutManager(context)
         }
         binding.recyclerCharacters.addItemDecoration(

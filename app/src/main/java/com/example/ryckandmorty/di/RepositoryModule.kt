@@ -2,6 +2,8 @@ package com.example.ryckandmorty.di
 
 import com.example.ryckandmorty.data.repository.CharactersRepository
 import com.example.ryckandmorty.data.repository.CharactersRepositoryImpl
+import com.example.ryckandmorty.data.repository.EpisodeRepository
+import com.example.ryckandmorty.data.repository.EpisodeRepositoryImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -14,4 +16,9 @@ abstract class RepositoryModule {
     abstract fun provideCharacterRepository(
         characterRepositoryImpl: CharactersRepositoryImpl
     ): CharactersRepository
+
+    @Binds
+    abstract fun provideEpisodeRepository(
+        episodeRepositoryImpl: EpisodeRepositoryImpl
+    ): EpisodeRepository
 }
