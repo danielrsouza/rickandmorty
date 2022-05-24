@@ -2,6 +2,7 @@ package com.example.ryckandmorty.di
 
 import com.example.ryckandmorty.data.BASE_URL
 import com.example.ryckandmorty.data.remote.CharactersApi
+import com.example.ryckandmorty.data.remote.EpisodeApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -49,4 +50,9 @@ object NetworkModule {
     @Provides
     fun provideCharactersApi(retrofit: Retrofit): CharactersApi =
         retrofit.create(CharactersApi::class.java)
+
+    @Singleton
+    @Provides
+    fun provideEpisodeApi(retrofit: Retrofit): EpisodeApi =
+        retrofit.create(EpisodeApi::class.java)
 }

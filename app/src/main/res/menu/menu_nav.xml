@@ -6,7 +6,7 @@
         android:icon="@drawable/account_supervisor"
         android:title="@string/characters" />
     <item
-        android:id="@+id/planetsFragment"
-        android:icon="@drawable/earth"
-        android:title="@string/planets" />
+        android:id="@+id/episodesFragment"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        android:title="@string/episodes" />
 </menu>

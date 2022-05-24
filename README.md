@@ -3,11 +3,11 @@
 
 :construction: Project under construction  :construction:
 
-This application presents the characters and planets involved in the series, aiming to present their origins, species and photos for lovers of the series to take their doubts and see the curiosity about them.
+This application presents the characters and ~~planets~~ episodes involved in the series, aiming to present their origins, species and photos for lovers of the series to take their doubts and see the curiosity about them.
 
 ## FEATURES
 - List of Characters
-- List of Planets
+- List of ~~Planets~~ Episodes
 - Details About Characters
 
 ## 📁 Project access

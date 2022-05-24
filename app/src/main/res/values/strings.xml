@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">ryckandmorty</string>
+    <string name="app_name">Ryck And Morty</string>
 
     <!-- MENU -->
     <string name="characters">Characters</string>
-    <string name="planets">Planets</string>
+    <string name="episodes">Episodes</string>
 
 
     <!-- Characters -->
