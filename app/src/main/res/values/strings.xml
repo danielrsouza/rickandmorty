@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ryckandmorty</string>
+
+    <!-- MENU -->
+    <string name="characters">Characters</string>
+    <string name="planets">Planets</string>
+
+
+    <!-- Characters -->
+    <string name="image_of_characters">image of character</string>
 </resources>

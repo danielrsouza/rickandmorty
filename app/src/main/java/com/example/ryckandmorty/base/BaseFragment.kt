@@ -1,4 +1,4 @@
-package com.example.ryckandmorty.ui.base
+package com.example.ryckandmorty.base
 
 import android.os.Bundle
 import android.view.LayoutInflater
